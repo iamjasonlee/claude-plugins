@@ -1,0 +1,11 @@
+{
+  "name": "jason-plugins",
+  "owner": { "name": "Jason" },
+  "description": "Selected plugins from anthropics/claude-plugins-community",
+  "plugins": [
+    { "name": "eli5", "description": "ELI5 visual HTML explainer",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/claude-plugins-community.git", "path": "eli5" } },
+    { "name": "html-plan", "description": "Implementation plan as interactive HTML",
+      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/claude-plugins-community.git", "path": "html-plan" } }
+  ]
+}
