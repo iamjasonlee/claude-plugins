@@ -1,0 +1,22 @@
+name: Update plugins from upstream
+
+on:
+  schedule:
+    - cron: "17 21 * * 0"  # 매주 월요일 06:17 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/update-shas.py
+      - run: |
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Update plugin SHAs from upstream"
+          git push

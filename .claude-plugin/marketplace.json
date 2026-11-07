@@ -1,11 +1,29 @@
 {
   "name": "jason-plugins",
-  "owner": { "name": "Jason" },
+  "owner": {
+    "name": "Jason"
+  },
   "description": "Selected plugins from anthropics/claude-plugins-community",
   "plugins": [
-    { "name": "eli5", "description": "ELI5 visual HTML explainer",
-      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/claude-plugins-community.git", "path": "eli5" } },
-    { "name": "html-plan", "description": "Implementation plan as interactive HTML",
-      "source": { "source": "git-subdir", "url": "https://github.com/anthropics/claude-plugins-community.git", "path": "html-plan" } }
+    {
+      "name": "eli5",
+      "description": "ELI5 visual HTML explainer",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-community.git",
+        "path": "eli5",
+        "sha": "863e70dc7cff21a2facc749e40a7ecd1a5d19833"
+      }
+    },
+    {
+      "name": "html-plan",
+      "description": "Implementation plan as interactive HTML",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-community.git",
+        "path": "html-plan",
+        "sha": "88003be1129c09381d27100b37a8fdc21b3214bf"
+      }
+    }
   ]
 }
